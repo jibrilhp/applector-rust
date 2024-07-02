@@ -1,5 +1,7 @@
+use std::env;
 pub fn run() {
-    println!("running!");
+    let username = env::var("USER").expect("USER environment variable not set");
+    println!("running (runner) on user {} !",username);
 }
 
 #[cfg(test)]

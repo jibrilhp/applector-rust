@@ -14,8 +14,8 @@ pub struct CmdExit {
     pub message: Option<String>,
 }
 
-pub const CMD: &str = r"hello";
-
+pub const CMD: &str = r"meong";
+ 
 #[cfg(test)]
 mod tests {
     use super::*;

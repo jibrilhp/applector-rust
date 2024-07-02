@@ -1,7 +1,7 @@
 [package]
 name = "applector_rust"
 version = "0.1.0"
-edition = "2021"
+edition = "2021" # cargo edition
 
 
 #
@@ -20,11 +20,6 @@ edition = "2021"
 
 # swaps:
 # anything with __V_
-#
-
-
-#
-# cargo binstall metadata:
 #
 
 [package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
@@ -70,7 +65,7 @@ default = ["cli"]
 cli = ["clap"]
 
 [[bin]]
-name = "__v_bin_name__"
+name = "applector_rust"
 path = "src/bin/main.rs"
 
 required-features = ["cli"]
